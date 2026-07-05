@@ -1,0 +1,40 @@
+h2 {
+  color:blue
+}
+.tag {
+  color:brown
+}
+.tag-green {
+  color:chartreuse
+}
+body {
+  font-family: Montserrat, sans-serif;
+  color:#515076
+}
+
+.main-text {
+  color: chocolate;
+}
+
+
+.shadow {
+  background-color: #5150761A;
+  padding: 25px;
+  margin-bottom: 30px;
+  width: 340px;
+  box-sizing: border-box;
+  margin-left: 85px;
+}
+
+.product {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  color:brown
+}
