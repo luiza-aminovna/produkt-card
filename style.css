@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 h2 {
   color:blue
 }
@@ -7,9 +10,20 @@ h2 {
 .tag-green {
   color:chartreuse
 }
+
 body {
+  
   font-family: Montserrat, sans-serif;
-  color:#515076
+  font-size: 13px;
+  color:#515076;
+}
+
+.container {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  width: 1110px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .main-text {
@@ -17,19 +31,21 @@ body {
 }
 
 
-.shadow {
+.card {
   background-color: #5150761A;
   padding: 25px;
-  margin-bottom: 30px;
   width: 340px;
-  box-sizing: border-box;
-  margin-left: 85px;
 }
 
 .product {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+ 
 }
 
 h1 {
@@ -37,4 +53,23 @@ h1 {
   font-weight: 400;
   text-align: center;
   color:brown
+}
+
+.for-skin {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 5px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.product-list {
+  padding-left: 20px;
+}
+
+.product-list li::marker {
+  font-size: 1.4em;
 }
