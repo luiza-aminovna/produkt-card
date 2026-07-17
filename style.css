@@ -1,15 +1,6 @@
 *{
     box-sizing: border-box;
 }
-h2 {
-  color:blue
-}
-.tag {
-  color:brown
-}
-.tag-green {
-  color:chartreuse
-}
 
 body {
   
@@ -26,16 +17,6 @@ body {
   justify-content: center;
 }
 
-.main-text {
-  color: chocolate;
-}
-
-
-.card {
-  background-color: #5150761A;
-  padding: 25px;
-  width: 340px;
-}
 
 .product {
   list-style-type: none;
@@ -45,8 +26,15 @@ body {
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
- 
 }
+
+
+.product__card {
+  background-color: #5150761A;
+  padding: 25px;
+  width: 340px;
+}
+
 
 h1 {
   font-size: 70px;
@@ -55,21 +43,23 @@ h1 {
   color:brown
 }
 
-.for-skin {
+.card__skin {
   text-transform: uppercase;
   display: block;
   margin-top: 5px;
 }
-.product-price {
+
+
+.card__price {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   font-size: 20px;
 }
-.product-list {
+.card__list {
   padding-left: 20px;
 }
 
-.product-list li::marker {
+.card__list li::marker {
   font-size: 1.4em;
 }
