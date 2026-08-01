@@ -30,7 +30,7 @@ body {
 
 
 .product__card {
-  background-color: #5150761A;
+  background-color: #F7F7FA;
   padding: 25px;
   width: 340px;
 }
@@ -40,7 +40,7 @@ h1 {
   font-size: 70px;
   font-weight: 400;
   text-align: center;
-  color:brown
+  color:#515076;
 }
 
 .card__skin {
@@ -62,4 +62,43 @@ h1 {
 
 .card__list li::marker {
   font-size: 1.4em;
+}
+
+.card--accent:hover {
+  background-color: #cacbe5;
+  border-radius: 30px;
+  border: 2px solid rgb(16, 3, 32);
+  box-shadow: 0 10px 32px rgb(16, 3, 32);
+  z-index: 1;
+}
+
+.card--accent {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 4px solid #948b8b;
+}
+
+.card__name--heading {
+  color: #5451ac;
+}
+
+.card__rating {
+  color: #290808;
+  flex-wrap: wrap;
+  letter-spacing: 15px;
+}
+
+.rating {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9e9f7;
+  list-style: none;
+  padding: 20px;
+  font-size: 20px;
 }
