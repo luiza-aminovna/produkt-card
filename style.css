@@ -102,3 +102,12 @@ h1 {
   padding: 20px;
   font-size: 20px;
 }
+
+#change-header-color.button--active {
+  background-color: rgb(222, 188, 208);
+  color: #6d0aef
+}
+
+#change-header-color {
+  background-color:rgb(168, 213, 224);
+}
