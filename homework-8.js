@@ -29,8 +29,8 @@ console.log(car);
 
 
 function checkSpeed(car) { //5 задание
-  if (!("максимальная скорость" in car)) {
-    car ["максимальная скорость"] = 200;
+  if (!("maxSpeed" in car)) {
+    car ["maxSpeed"] = 200;
   }
 }
 checkSpeed(car);
