@@ -57,7 +57,7 @@ const userWithIdAndName = comments.map(user => { // 9 задание
   };
 });
 
-console.log(userWithIdAndName);е
+console.log(userWithIdAndName);
 
 
 
