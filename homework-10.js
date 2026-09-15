@@ -8,12 +8,15 @@ console.log(products[0].title);
 
 
 function getNumberCard() { // 5 задание
-  const answer = prompt("Сколько карточек отобразить? От 1 до 5");
-  const number = Number(answer); // функция
-  if (number >= 1 && number <= 5) {
+  let number;
+  while (true) {
+  number = prompt("Сколько карточек отобразить? От 1 до 5");
+  number = Number(number); // функция
+    if (number >= 1 && number <= 5 && Number.isInteger(number)) {
     return number;
   }
-  return 1; // если пользователь напишет буквы то выйдет 1 карточка
+  alert("Пожалуйста введите число от 1 до 5");
+  }
 }
 
 
@@ -22,10 +25,14 @@ function renderCards(products)  { // products массив который пол
   const cards = products.map((product) => {
     return `
     <div class="product-card">
-      <h1>${product.title}</h1>
-      <h2>${product.description}</h2>
-      <p>${product.structure}<p>
+      <h2>${product.title}</h2>
+      <p>${product.description}</p>
       <p>${product.price} ₽</p>
+      <ul>
+        <li>${product.structure[0]}</li>
+        <li>${product.structure[1]}</li>
+        <li>${product.structure[2]}</li>
+      </ul>
     </div>
     `;
   });
