@@ -7,17 +7,17 @@ console.log(products[0].title);
 
 
 
-function getNumberCard() { // 5 задание
-  let number;
-  while (true) {
-  number = prompt("Сколько карточек отобразить? От 1 до 5");
-  number = Number(number); // функция
-    if (number >= 1 && number <= 5 && Number.isInteger(number)) {
-    return number;
-  }
-  alert("Пожалуйста введите число от 1 до 5");
-  }
-}
+// function getNumberCard() { // 5 задание
+//   let number;
+//   while (true) {
+//   number = prompt("Сколько карточек отобразить? От 1 до 5");
+//   number = Number(number); // функция
+//     if (number >= 1 && number <= 5 && Number.isInteger(number)) {
+//     return number;
+//   }
+//   alert("Пожалуйста введите число от 1 до 5");
+//   }
+// }
 
 
 function renderCards(products)  { // products массив который получает функция + 3 задание (шаблон)
@@ -39,12 +39,12 @@ function renderCards(products)  { // products массив который пол
   container.innerHTML = cards.join(""); // join превращает массив карточек в одну HTML строку затем вставляет в div
 };
 
-const numberCards = getNumberCard();
-const cardsToRender = products.slice(0,numberCards);
-renderCards(cardsToRender);
+// const numberCards = getNumberCard(); // выходит ошибка в консоли
+// const cardsToRender = products.slice(0,numberCards);
+// renderCards(cardsToRender);
 
-console.log(numberCards);
-console.log(cardsToRender);
+// console.log(numberCards);
+// console.log(cardsToRender);
 
 
 //return - шаблон карточки
