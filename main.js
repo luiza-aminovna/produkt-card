@@ -51,9 +51,39 @@ function outputConsoleLog(message) {
 
 // Домашняя работа
 
-const changeHeaderColorButton = document.querySelector("#change-header-color"); // Получить элемент 
+const changeHeaderColorButton = document.querySelector("#change-header-color"); // Получить элемент
 
 changeHeaderColorButton.addEventListener("click", () => {
   changeHeaderColorButton.classList.toggle("button--active");
   console.log("кнопка нажата");
+});
+
+// 12 домашка
+
+import { Modal } from "./modal.js";
+import { Form } from "./form.js";
+const registerModal = new Modal("registration-modal");
+const registerForm = new Form("registration-form");
+const registerBtn = document.getElementById("registration-btn");
+registerModal.open();
+registerBtn.addEventListener("click", () => {
+  registerModal.open();
+});
+
+registerForm.form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // 1) валидируем форму
+  if (!registerForm.isFormValid()) {
+    alert("Форма невалидна, заполниет корректно");
+    return;
+  }
+  // 2) получаем данные из формы
+  const values = registerForm.get.FormValues();
+
+  if (values.password !== values.repeatPassword) {
+    alert("Пароли не совпадают");
+  }
+  delete values.password;
+  delete values.repeatPassword;
+  console.log(values);
 });
