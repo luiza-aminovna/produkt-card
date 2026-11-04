@@ -78,7 +78,7 @@ registerForm.form.addEventListener("submit", (event) => {
     return;
   }
   // 2) получаем данные из формы
-  const values = registerForm.get.FormData();
+  const values = registerForm.getFormData();
 
   if (values.password !== values.repeatPassword) {
     alert("Пароли не совпадают");
