@@ -11,9 +11,11 @@ export class Modal {
   }
   open() {
     this.modal.classList.add("modal--open");
+    this.isOpen = true;
   }
   close() {
     this.modal.classList.remove("modal--open");
+    this.isOpen = false;
   }
   isModalOpen() {
     return this.isOpen;

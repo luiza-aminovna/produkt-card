@@ -65,7 +65,7 @@ import { Form } from "./form.js";
 const registerModal = new Modal("registration-modal");
 const registerForm = new Form("registration-form");
 const registerBtn = document.getElementById("registration-btn");
-registerModal.open();
+
 registerBtn.addEventListener("click", () => {
   registerModal.open();
 });
@@ -78,7 +78,7 @@ registerForm.form.addEventListener("submit", (event) => {
     return;
   }
   // 2) получаем данные из формы
-  const values = registerForm.get.FormValues();
+  const values = registerForm.get.FormData();
 
   if (values.password !== values.repeatPassword) {
     alert("Пароли не совпадают");
