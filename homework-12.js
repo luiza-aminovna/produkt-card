@@ -24,10 +24,10 @@ class Shoes extends Clothing {
     this.material = material;
   }
   showMaterial() {
-    console.log(`$${this.brand}, ${this.size}, ${this.price}, ${this.material}`)
+    console.log(`${this.brand}, ${this.size}, ${this.price}, ${this.material}`);
   }
 }
-const dress = new Dress("Zara", "M", 5000, 'Black');
-const shoes = new Shoes('Nike', 38, 3500, 'Leather');
+const dress = new Dress("Zara", "M", 5000, "Black");
+const shoes = new Shoes("Nike", 38, 3500, "Leather");
 dress.showStyle();
 shoes.showMaterial();

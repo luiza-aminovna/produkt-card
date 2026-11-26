@@ -74,7 +74,7 @@ registerForm.form.addEventListener("submit", (event) => {
   event.preventDefault();
   // 1) валидируем форму
   if (!registerForm.isFormValid()) {
-    alert("Форма невалидна, заполниет корректно");
+    alert("Форма невалидна, заполните корректно");
     return;
   }
   // 2) получаем данные из формы
